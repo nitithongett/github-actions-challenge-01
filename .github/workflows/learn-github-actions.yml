@@ -9,5 +9,6 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g bats
+      - run: npm install express
       - run: bats -v
-      - run: app.js
+      - run: node app.js
